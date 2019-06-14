@@ -8,6 +8,7 @@
 5. Infinite Scroll (using flatlist)
 6. Sort by name(ascending/descending) and availability
 7. Localization using translation json and i18n-js package
+8. Search by criteria or show all cars
 
 ## Setup, build and run:
 
