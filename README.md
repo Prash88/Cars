@@ -10,5 +10,7 @@
 7. Localization using translation json and i18n-js package
 
 ### Screenshots - iOS
+![ScreenShot](https://github.com/Prash88/Cars/blob/master/screenshots/Screen%20Shot%202019-06-14%20at%205.13.18%20AM.png)
+![ScreenShot](https://github.com/Prash88/Cars/blob/master/screenshots/Screen%20Shot%202019-06-14%20at%205.13.29%20AM.png)
 
 ### Screenshots - Android
