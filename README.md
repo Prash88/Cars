@@ -14,3 +14,5 @@
 ![ScreenShot](https://github.com/Prash88/Cars/blob/master/screenshots/Screen%20Shot%202019-06-14%20at%205.13.29%20AM.png)
 
 ### Screenshots - Android
+![ScreenShot](https://github.com/Prash88/Cars/blob/master/screenshots/Screen%20Shot%202019-06-14%20at%205.16.20%20AM.png)
+![ScreenShot](https://github.com/Prash88/Cars/blob/master/screenshots/Screen%20Shot%202019-06-14%20at%205.16.38%20AM.png)
