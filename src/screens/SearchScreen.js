@@ -27,7 +27,7 @@ class SearchScreen extends React.Component {
   onSelect = (key, value) => {
     // reset model when selecting a new make
     if (key === "make" && this.state.make !== value) {
-      this.setState({ [key]: value, model: "" })
+      this.setState({ [key]: value, model: "", year: null })
     } else {
       this.setState({ [key]: value })
     }
@@ -77,6 +77,7 @@ class SearchScreen extends React.Component {
             title={i18n.t("year")}
             values={YEAR}
             onSelect={this.onSelect}
+            reset={!this.state.year}
           />
           <Button 
             block 

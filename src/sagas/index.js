@@ -4,7 +4,7 @@ import { getCars } from "../api"
 
 function* searchCars({ criteria }) {
   try {
-    const cars = getCars(criteria)
+    const cars = yield getCars(criteria)
     yield put(ACTIONS.searchCarsSuccess(cars))
   } catch (e) {
     yield put(ACTIONS.searchCarsFailure(e.message))
@@ -14,7 +14,7 @@ function* searchCars({ criteria }) {
 function* getMoreCars() {
   try {
     const { chunkIndex, criteria } = yield select(state => state.Cars)
-    const cars = getCars(criteria, chunkIndex)
+    const cars = yield getCars(criteria, chunkIndex)
     yield put(ACTIONS.getMoreCarsSuccess(cars))
   } catch (e) {
     console.log("error in get more cars", e.message)
