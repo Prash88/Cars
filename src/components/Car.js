@@ -3,6 +3,7 @@ import { Image, Alert, StyleSheet } from "react-native"
 import { Card, CardItem, Body, Text, Left, Right, Button } from "native-base"
 import i18n from "../config/i18n"
 import { AVAILABILITY } from "../constants"
+import IconPalatte from "./IconPalatte"
 
 const Car = ({ data }) => 
   <Card>
@@ -46,7 +47,11 @@ const Car = ({ data }) =>
         )}
       </Right>
     </CardItem>
+    <CardItem>
+      <IconPalatte id={data.id} no={data.stars > 0 ? data.stars : 0} />
+    </CardItem>
   </Card>;
+
 
 const _buyButtonOnPress = () => 
   Alert.alert(i18n.t("buy"), i18n.t("contactDealer"), [{ text: i18n.t("okay") }]);

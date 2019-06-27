@@ -9,6 +9,7 @@ const INITIAL_STATE = {
 }
 
 export default (state = INITIAL_STATE, action) => {
+  //Use immutable 
   switch (action.type) {
     // get cars
     case TYPES.SEARCH_CARS:
@@ -23,6 +24,16 @@ export default (state = INITIAL_STATE, action) => {
       return { ...state }
     case TYPES.GET_MORE_CARS_SUCCESS:
       return { ...state, cars: state.cars.concat(action.cars), chunkIndex: state.chunkIndex + 1 }
+
+    case TYPES.ADD_STARS:
+      let cars = state.cars.map(e => {
+        if (e.id === action.payload.id){
+          e.stars = action.payload.stars;
+        }
+        return e;
+    });
+      return { ...state, cars: cars }
+
     default:
       return state
   }
